@@ -175,7 +175,7 @@ if($foundLinetmp!=-1 && $foundLineref != -1){
         $mail->addAddress($consultantEmail, '');
         $mail->addAttachment('uploads/' . $_SESSION['user_email'] . '.pdf');
         $mail->Subject = 'Demande de consultation';
-        $url = "http://localhost/ProjetJeune/consultant.php?lignejeune=".$foundLinetmp."&ligneref=".$foundLineref;
+        $url = "http://localhost/ProjetJeune-main/consultant.php?lignejeune=".$foundLinetmp."&ligneref=".$foundLineref;
         $mail->Body = 'Cliquez sur ce lien pour accéder à la page : '.$url;
 
         $mail->SMTPOptions = array(
