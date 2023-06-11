@@ -214,7 +214,7 @@ if (isset($_POST['submit'])) {
         $mail->addAddress($emailReferentInput, 'alexandre');
         $mail->addAttachment('uploads/' . $_SESSION['user_email'] . '.pdf');
         $mail->Subject = 'Demande de referencement';
-        $url = "http://localhost/ProjetJeune/referent.php?ligne=".$ligneTrouvee;
+        $url = "http://localhost/ProjetJeune-main/referent.php?ligne=".$ligneTrouvee;
         $mail->Body = 'Cliquez sur ce lien pour accéder à la page : '.$url;
 
         $mail->SMTPOptions = array(
